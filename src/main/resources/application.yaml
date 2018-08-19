@@ -1,0 +1,49 @@
+######################## 配置druid连接池的信息#######################################
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/jdbc
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 6000
+    timeBetweenEvictionRunsMillis: 6000
+    minEvictableIdleTimeMillis: 25200000
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    validationQuery: SELECT 1 FROM DUAL
+    RemoveAbandanded: true
+    removeAbandonedTimeout: 1800
+    logAbandoned: true
+
+
+############################## server的配置信息 ###################################
+server:
+  port: 8080
+  servlet:
+    context-path: /blog-server
+
+
+
+######################### mybatis的配置信息 ######################################
+
+mybatis:
+  # 指定mapper配置文件的位置
+  mapper-locations: classpath:/mappers/*.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
