@@ -7,4 +7,7 @@ import org.apache.ibatis.annotations.Select;
 public interface UserMapper {
 //    @Select("select * from t_user where user_id=#{userId}")
     User getUser(Integer userId);
+
+    int insertUser(User user);
+
 }

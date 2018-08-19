@@ -44,11 +44,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!--导入原生的jdbc启动器-->
+        <!--导入原生的jdbc启动器
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--导入mysql的驱动-->
         <dependency>
